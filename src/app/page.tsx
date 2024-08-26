@@ -1,14 +1,15 @@
 "use client";
-import { useQuery } from "@tanstack/react-query";
+import TabsSection from "@/components/TabsSection";
 import React, { FC } from "react";
 
 interface IHomePageProps {}
 
 const HomePage: FC<IHomePageProps> = () => {
-
-  // const {} = useQuery({queryKey: [], queryFn: () => {}});
-
-  return <main className="container">HomePage</main>;
+  return (
+    <main className="container min-h-screen w-full flex flex-col justify-center py-12">
+      <TabsSection />
+    </main>
+  );
 };
 
 export default HomePage;
